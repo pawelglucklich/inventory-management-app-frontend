@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: left;
+    background-color: royalblue;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.company-name {
+    font-size: 5vh;
+    padding-left: 30px;
+}
