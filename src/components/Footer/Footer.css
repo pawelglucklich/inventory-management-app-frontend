@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: royalblue;
+}
+
+footer button {
+    width: 15vh;
+}
