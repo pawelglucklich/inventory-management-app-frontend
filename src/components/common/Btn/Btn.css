@@ -6,3 +6,7 @@ button, .btn {
     border-style: solid;
     border-width: 0.8vh;
 }
+
+button:active, .btn:active {
+    border-color: dimgray lightgrey lightgrey dimgray;
+}
