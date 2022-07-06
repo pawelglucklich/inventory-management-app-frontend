@@ -6,5 +6,21 @@ footer {
 }
 
 footer button {
-    width: 15vh;
+    width: 35vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+footer div.footer-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    width: 100vw;
+    line-height: 5vh;
+    margin-right: 2vh;
+    font-size: 2vh;
+}
+
+footer div.footer-right p {
+text-align: right;
 }
