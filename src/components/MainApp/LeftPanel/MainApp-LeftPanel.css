@@ -11,18 +11,18 @@ div.main-app-left-panel button {
     text-transform: uppercase;
 }
 
-div.main-app-left-panel .btn-A {
+div.main-app-left-panel .btn-a {
     background-color: palevioletred;
 }
 
-div.main-app-left-panel .btn-B {
+div.main-app-left-panel .btn-b {
     background-color: palegoldenrod;
 }
 
-div.main-app-left-panel .btn-C {
+div.main-app-left-panel .btn-c {
     background-color: palegreen;
 }
 
-div.main-app-left-panel .btn-D {
+div.main-app-left-panel .btn-d {
     background-color: paleturquoise;
 }
