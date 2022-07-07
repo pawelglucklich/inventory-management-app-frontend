@@ -12,11 +12,11 @@ div.main-app-right-panel button {
     width: calc(80vh / 6);
 }
 
-div.main-app-right-panel .btn-b3,
-div.main-app-right-panel .btn-cancel {
+div.main-app-right-panel .b3,
+div.main-app-right-panel .cancel {
     width: calc(80vh / 4);
 }
 
-div.main-app-right-panel .btn-ok {
+div.main-app-right-panel .ok {
     width: calc((80vh / 6)*2);
 }

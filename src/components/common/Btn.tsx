@@ -11,6 +11,6 @@ interface Props {
 export const Btn = (props: Props) => {
     return (props.to
             ? <Link className="btn" to={props.to}>{props.text}</Link>
-            : <button className={`btn-${props.text} btn`}>{props.text}</button>
+            : <button className={`${props.text} btn`}>{props.text}</button>
     );
 };
