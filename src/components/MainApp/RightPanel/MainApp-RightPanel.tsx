@@ -6,7 +6,7 @@ import {Btn} from "../../common/Btn";
 export const MainAppRightPanel = () => {
     return (
         <div className={'main-app-right-panel'}>
-            <Btn text={'b3'}/>
+            <Btn text={'b3 hidden'}/>
             <Btn text={'cancel'}/>
             <Btn text={'7'}/>
             <Btn text={'8'}/>

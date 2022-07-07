@@ -10,8 +10,8 @@ export const MainAppLeftPanel = () => {
             <Btn text={'b'}/>
             <Btn text={'c'}/>
             <Btn text={'d'}/>
-            <Btn text={'b1'}/>
-            <Btn text={'b2'}/>
+            <Btn text={'b1 hidden'}/>
+            <Btn text={'b2 hidden'}/>
         </div>
     );
 };
