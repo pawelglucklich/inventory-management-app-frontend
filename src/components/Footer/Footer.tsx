@@ -1,8 +1,8 @@
 import React from "react";
-import {Btn} from "../common/Btn/Btn";
+import {Btn} from "../common/Btn";
+import {Clock} from "../common/Clock";
 
 import './Footer.css';
-import {FooterClock} from "./Clock/Footer-Clock";
 
 export const Footer = () => {
     return (
@@ -11,7 +11,7 @@ export const Footer = () => {
             <Btn text={'Men2'}/>
             <div className={'footer-right'}>
                 <h2>John Smith</h2>
-                <FooterClock/>
+                <Clock/>
             </div>
         </footer>
     );

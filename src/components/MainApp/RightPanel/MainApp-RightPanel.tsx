@@ -1,7 +1,7 @@
 import React from "react";
 
 import './MainApp-RightPanel.css';
-import {Btn} from "../../common/Btn/Btn";
+import {Btn} from "../../common/Btn";
 
 export const MainAppRightPanel = () => {
     return (

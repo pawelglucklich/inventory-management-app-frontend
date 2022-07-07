@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export const FooterClock = () => {
+export const Clock = () => {
 
     const [date, setDate] = useState(new Date());
 
