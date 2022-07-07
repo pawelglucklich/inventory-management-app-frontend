@@ -1,4 +1,4 @@
-button, .btn {
+button {
     height: 10vh;
     width: 10vh;
     background-color: darkgrey;
@@ -7,6 +7,6 @@ button, .btn {
     border-width: 0.8vh;
 }
 
-button:active, .btn:active {
+button:active {
     border-color: dimgray lightgrey lightgrey dimgray;
 }
