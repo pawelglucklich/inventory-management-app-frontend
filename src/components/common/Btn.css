@@ -7,6 +7,10 @@ button {
     border-width: 0.8vh;
 }
 
-button:active {
+.btn.hidden {
+    font-size: 0;
+}
+
+button:not(.hidden):active {
     border-color: dimgray lightgrey lightgrey dimgray;
 }
