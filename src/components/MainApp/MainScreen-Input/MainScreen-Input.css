@@ -1,0 +1,22 @@
+div.main-screen-input {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+}
+
+.screen {
+    margin: auto;
+    height: 20vh;
+    width: 50vw;
+    background-color: darkgrey;
+    border-color: lightgrey dimgray dimgray lightgrey;
+    border-style: solid;
+    border-width: 0.8vh;
+    line-height: 20vh;
+
+}
+
+.screen p {
+    font-size: 10vh;
+    text-align: center;
+}
