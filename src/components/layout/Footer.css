@@ -5,13 +5,14 @@ footer {
     background-color: royalblue;
 }
 
-footer button {
+footer .btn {
     width: 35vh;
     font-size: 3vh;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-footer div.footer-right {
+.footer-right {
     display: flex;
     flex-flow: column wrap;
     align-content: flex-end;
@@ -21,6 +22,6 @@ footer div.footer-right {
     font-size: 2vh;
 }
 
-footer div.footer-right p {
+.footer-right p {
 text-align: right;
 }
