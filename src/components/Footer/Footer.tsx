@@ -7,8 +7,8 @@ import './Footer.css';
 export const Footer = () => {
     return (
         <footer>
-            <Btn text={'Men1'}/>
-            <Btn text={'Men2'}/>
+            <Btn text={'Men1 hidden'}/>
+            <Btn text={'Men2 hidden'}/>
             <div className={'footer-right'}>
                 <h2>John Smith</h2>
                 <Clock/>
