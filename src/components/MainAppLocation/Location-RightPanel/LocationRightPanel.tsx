@@ -2,8 +2,11 @@ import React from "react";
 
 import './LocationRightPanel.css';
 import {Btn, clickEnum} from "../../common/Btn";
+import {Link} from "react-router-dom";
+
 
 export const LocationRightPanel = () => {
+
     return (
         <div className={'location-right-panel'}>
             <Btn text={'b3 hidden'}/>
@@ -21,7 +24,9 @@ export const LocationRightPanel = () => {
             <Btn click={clickEnum.k_0} text={'0'}/>
             <Btn click={clickEnum.k_comma} text={','}/>
             <Btn text={'▼'}/>
-            <Btn text={'ok'}/>
+            <Link to={'/location/listAll'}>
+                <button className={'ok btn'}>ok</button>
+            </Link>
         </div>
     );
 };

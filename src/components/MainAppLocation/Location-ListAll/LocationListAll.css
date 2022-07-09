@@ -1,0 +1,16 @@
+.location-list-all {
+    display: flex;
+    height: 80vh;
+    background-color: whitesmoke;
+}
+
+.location-list-all .screen {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.location-list-all p {
+
+}
