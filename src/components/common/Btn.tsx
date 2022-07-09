@@ -26,11 +26,11 @@ export enum clickEnum {
     k_c = 'C',
     k_d = 'D',
     k_comma = ',',
-    k_cancel = 'cancel'
+    k_cancel = 'cancel',
 }
 
 export const Btn = (props: Props) => {
-    const [val, setVal] = useGlobalState('screenValue')
+    const [val, setVal] = useGlobalState('screenValue');
     const {text, click} = props;
 
     return (props.to
@@ -38,11 +38,11 @@ export const Btn = (props: Props) => {
             : click
                 ? <button
                     onClick={() => {
-                        if ((click) === 'cancel') {
-                            return setVal('')
+                        if (click === 'cancel') {
+                            return setVal('');
                         } else if (val.length > 4) {
-                            return null
-                        } else setVal(val + click)
+                            return null;
+                        } else setVal(val + click);
                     }
                     } className={`${text} btn`}>{text}</button>
                 : <button className={`${text} btn`}>{text}</button>
