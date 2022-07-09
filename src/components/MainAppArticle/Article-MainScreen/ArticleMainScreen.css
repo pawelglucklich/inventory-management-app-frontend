@@ -1,10 +1,10 @@
-div.main-screen-input {
+.article-main-screen {
     height: 80vh;
     flex-grow: 1;
     display: flex;
 }
 
-.screen {
+.article-main-screen .screen {
     margin: auto;
     height: 20vh;
     width: 45vw;
@@ -16,7 +16,7 @@ div.main-screen-input {
 
 }
 
-.screen p {
+.article-main-screen .screen p {
     font-size: 15vh;
     text-align: center;
 }

@@ -5,7 +5,7 @@ import {Btn, clickEnum} from "../../common/Btn";
 
 export const LocationRightPanel = () => {
     return (
-        <div className={'main-app-right-panel'}>
+        <div className={'location-right-panel'}>
             <Btn text={'b3 hidden'}/>
             <Btn click={clickEnum.k_cancel} text={'cancel'}/>
             <Btn click={clickEnum.k_7} text={'7'}/>

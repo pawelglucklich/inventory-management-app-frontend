@@ -1,10 +1,10 @@
-div.main-app-right-panel {
+.location-right-panel {
     display: flex;
     flex-flow: wrap;
     width: calc((80vh / 6) * 3);
 }
 
-div.main-app-right-panel button {
+.location-right-panel button {
     font-size: 4vh;
     font-weight: bold;
     text-transform: uppercase;
@@ -12,11 +12,11 @@ div.main-app-right-panel button {
     width: calc(80vh / 6);
 }
 
-div.main-app-right-panel .b3,
-div.main-app-right-panel .cancel {
+.location-right-panel .b3,
+.location-right-panel .cancel {
     width: calc(80vh / 4);
 }
 
-div.main-app-right-panel .ok {
+.location-right-panel .ok {
     width: calc((80vh / 6)*2);
 }

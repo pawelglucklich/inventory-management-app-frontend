@@ -5,7 +5,7 @@ import './LocationLeftPanel.css';
 
 export const LocationLeftPanel = () => {
     return (
-        <div className={'main-app-left-panel'}>
+        <div className={'location-left-panel'}>
             <Btn click={clickEnum.k_a} text={'a'}/>
             <Btn click={clickEnum.k_b} text={'b'}/>
             <Btn click={clickEnum.k_c} text={'c'}/>

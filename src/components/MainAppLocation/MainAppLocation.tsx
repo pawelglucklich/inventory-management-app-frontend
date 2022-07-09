@@ -7,7 +7,7 @@ import './MainAppLocation.css';
 
 export const MainAppLocation = () => {
     return (
-        <div className={'main-app'}>
+        <div className={'main-app-location'}>
             <LocationLeftPanel/>
             <LocationMainScreen/>
             <LocationRightPanel/>

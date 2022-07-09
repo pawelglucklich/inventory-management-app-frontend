@@ -7,7 +7,7 @@ import './MainAppArticle.css';
 
 export const MainAppArticle = () => {
     return (
-        <div className={'main-app'}>
+        <div className={'main-app-article'}>
             <ArticleLeftPanel/>
             <ArticleMainScreen/>
             <ArticleRightPanel/>
