@@ -1,8 +1,8 @@
 import React from "react";
 
-import './MainApp-MainScreen.css';
+import './LocationMainScreen.css';
 
-export const MainAppMainScreen = () => {
+export const LocationMainScreen = () => {
     return (
         <div className={'main-app-main-screen'}/>
     );

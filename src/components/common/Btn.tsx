@@ -7,7 +7,26 @@ import './Btn.css';
 interface Props {
     text: string;
     to?: string;
-    click?: string;
+    click?: clickEnum;
+}
+
+export enum clickEnum {
+    k_1 = '1',
+    k_2 = '2',
+    k_3 = '3',
+    k_4 = '4',
+    k_5 = '5',
+    k_6 = '6',
+    k_7 = '7',
+    k_8 = '8',
+    k_9 = '9',
+    k_0 = '0',
+    k_a = 'A',
+    k_b = 'B',
+    k_c = 'C',
+    k_d = 'D',
+    k_comma = ',',
+    k_cancel = 'cancel'
 }
 
 export const Btn = (props: Props) => {
@@ -19,15 +38,13 @@ export const Btn = (props: Props) => {
             : click
                 ? <button
                     onClick={() => {
-                        if (click === 'cancel') {
+                        if ((click) === 'cancel') {
                             return setVal('')
-                        } else if (val.length > 9) {
+                        } else if (val.length > 4) {
                             return null
                         } else setVal(val + click)
                     }
-                    }
-                    className={`${text} btn`}
-                >{text}</button>
+                    } className={`${text} btn`}>{text}</button>
                 : <button className={`${text} btn`}>{text}</button>
     );
 };

@@ -7,7 +7,7 @@ div.main-screen-input {
 .screen {
     margin: auto;
     height: 20vh;
-    width: 50vw;
+    width: 45vw;
     background-color: darkgrey;
     border-color: lightgrey dimgray dimgray lightgrey;
     border-style: solid;
@@ -17,6 +17,6 @@ div.main-screen-input {
 }
 
 .screen p {
-    font-size: 10vh;
+    font-size: 15vh;
     text-align: center;
 }
