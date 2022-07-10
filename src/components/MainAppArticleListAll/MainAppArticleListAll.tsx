@@ -29,6 +29,7 @@ export const MainAppArticleListAll = () => {
             <LeftPanel/>
             <div className={'screen'}>
                 <table>
+                    <tbody>
                     <tr>
                         <th>Location</th>
                         <th>Description</th>
@@ -36,13 +37,14 @@ export const MainAppArticleListAll = () => {
                     </tr>
                     {
                         items.map(item => (
-                                <tr key={item.id} tabIndex={n += 1}>
-                                    <td>{(item.location).toUpperCase()}</td>
-                                    <td>{item.description}</td>
-                                    <td>{item.quantity}</td>
-                                </tr>
+                            <tr key={item.id} tabIndex={n += 1}>
+                                <td>{(item.location).toUpperCase()}</td>
+                                <td>{item.description}</td>
+                                <td>{item.quantity}</td>
+                            </tr>
                         ))
                     }
+                    </tbody>
                 </table>
             </div>
             <RightPanel/>

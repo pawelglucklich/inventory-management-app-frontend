@@ -14,7 +14,6 @@ export const LocationMainScreen = () => {
                             : `_ _ . _ _ . _`
     );
 
-
     return (
         <div className={'location-main-screen'}>
             <div className={'screen'}>
