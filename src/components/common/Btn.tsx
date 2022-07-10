@@ -12,7 +12,7 @@ interface Props {
 }
 
 export enum actionEnum {
-    doNothing = '0',
+    doNothing = '',
     locationListAll = '1',
     articleListAll = '2'
 }
