@@ -8,6 +8,13 @@ interface Props {
     text: string;
     to?: string;
     click?: clickEnum;
+    action: actionEnum;
+}
+
+export enum actionEnum {
+    doNothing = '0',
+    locationListAll = '1',
+    articleListAll = '2'
 }
 
 export enum clickEnum {
@@ -31,10 +38,12 @@ export enum clickEnum {
 
 export const Btn = (props: Props) => {
     const [val, setVal] = useGlobalState('screenValue');
-    const {text, click} = props;
+    const [okAction, setOkAction] = useGlobalState('okAction');
+    const {text, click, action} = props;
+
 
     return (props.to
-            ? <Link onClick={() => {setVal('')}} className="btn" to={props.to}>{text}</Link>
+            ? <Link onClick={() => {setVal(''); setOkAction(action)}} className="btn" to={props.to}>{text}</Link>
             : click
                 ? <button
                     onClick={() => {

@@ -1,5 +1,5 @@
 import React from "react";
-import {Btn} from "../common/Btn";
+import {actionEnum, Btn} from "../common/Btn";
 import {Clock} from "../utils/Clock";
 
 import './Footer.css';
@@ -7,8 +7,8 @@ import './Footer.css';
 export const Footer = () => {
     return (
         <footer>
-            <Btn to={'/article'} text={'article'}/>
-            <Btn to={'/'} text={'location'}/>
+            <Btn to={'/article'} text={'article'} action={actionEnum.articleListAll}/>
+            <Btn to={'/'} text={'location'} action={actionEnum.locationListAll}/>
             <div className={'footer-right'}>
                 <h2>John Smith</h2>
                 <Clock/>
