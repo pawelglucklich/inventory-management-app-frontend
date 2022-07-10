@@ -13,9 +13,13 @@ export const LocationListAll = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/item/search/location/${val}`);
-            const data = await res.json();
-            setItems(data.items);
+            if (val.length < 5) {
+                return '';
+            } else {
+                const res = await fetch(`http://localhost:3001/item/search/location/${val}`);
+                const data = await res.json();
+                setItems(data.items);
+            }
         })();
     }, []);
 
