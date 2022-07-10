@@ -1,16 +1,16 @@
 import React from "react";
-import {LocationLeftPanel} from "./Location-LeftPanel/LocationLeftPanel";
+import {LeftPanel} from "../LeftPanel/LeftPanel";
 import {LocationMainScreen} from "./Location-MainScreen/LocationMainScreen";
-import {LocationRightPanel} from "./Location-RightPanel/LocationRightPanel";
+import {RightPanel} from "../RightPanel/RightPanel";
 
 import './MainAppLocation.css';
 
 export const MainAppLocation = () => {
     return (
         <div className={'main-app-location'}>
-            <LocationLeftPanel/>
+            <LeftPanel/>
             <LocationMainScreen/>
-            <LocationRightPanel/>
+            <RightPanel/>
         </div>
     );
 };

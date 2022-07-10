@@ -7,8 +7,8 @@ import './Footer.css';
 export const Footer = () => {
     return (
         <footer>
-            <Btn to={'/article'} text={'article'} action={actionEnum.articleListAll}/>
-            <Btn to={'/'} text={'location'} action={actionEnum.locationListAll}/>
+            <Btn to={'/'} text={'article'} action={actionEnum.articleListAll}/>
+            <Btn to={'/location'} text={'location'} action={actionEnum.locationListAll}/>
             <div className={'footer-right'}>
                 <h2>John Smith</h2>
                 <Clock/>

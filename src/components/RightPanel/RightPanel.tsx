@@ -1,11 +1,25 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {actionEnum, Btn, clickEnum} from "../common/Btn";
+import {useGlobalState} from "../utils/state";
 
-import './ArticleRightPanel.css';
-import {actionEnum, Btn, clickEnum} from "../../common/Btn";
+import './RightPanel.css';
 
-export const ArticleRightPanel = () => {
+
+export const RightPanel = () => {
+    const [action, setAction] = useGlobalState("okAction");
+
+    const handleOk = () => {
+        if (action === actionEnum.locationListAll) {
+            return '/location/listAll';
+        } else if (action === actionEnum.articleListAll) {
+            return '/article/listAll';
+        }
+        return actionEnum.doNothing;
+    };
+
     return (
-        <div className={'article-right-panel'}>
+        <div className={'right-panel'}>
             <Btn text={'b3 hidden'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_cancel} text={'cancel'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_7} text={'7'} action={actionEnum.doNothing}/>
@@ -21,7 +35,9 @@ export const ArticleRightPanel = () => {
             <Btn click={clickEnum.k_0} text={'0'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_comma} text={','} action={actionEnum.doNothing}/>
             <Btn text={'▼'} action={actionEnum.doNothing}/>
-            <Btn text={'ok'} action={actionEnum.doNothing}/>
+            <Link to={handleOk()}>
+                <button className={'ok btn'}>ok</button>
+            </Link>
         </div>
     );
 };

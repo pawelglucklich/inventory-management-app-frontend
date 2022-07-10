@@ -1,6 +1,6 @@
 import React from "react";
-import {ArticleLeftPanel} from "./Article-LeftPanel/ArticleLeftPanel";
-import {ArticleRightPanel} from "./Article-RightPanel/ArticleRightPanel";
+import {LeftPanel} from "../LeftPanel/LeftPanel";
+import {RightPanel} from "../RightPanel/RightPanel";
 import {ArticleMainScreen} from "./Article-MainScreen/ArticleMainScreen";
 
 import './MainAppArticle.css';
@@ -8,9 +8,9 @@ import './MainAppArticle.css';
 export const MainAppArticle = () => {
     return (
         <div className={'main-app-article'}>
-            <ArticleLeftPanel/>
+            <LeftPanel/>
             <ArticleMainScreen/>
-            <ArticleRightPanel/>
+            <RightPanel/>
         </div>
     );
 };

@@ -1,9 +1,9 @@
-.article-left-panel {
+.left-panel {
     display: flex;
     flex-direction: column;
 }
 
-.article-left-panel button {
+.left-panel button {
     height: calc(80vh / 6);
     width: calc(80vh / 6);
     font-size: 4vh;
@@ -11,18 +11,18 @@
     text-transform: uppercase;
 }
 
-.article-left-panel .a {
+.left-panel .a {
     background-color: palevioletred;
 }
 
-.article-left-panel .b {
+.left-panel .b {
     background-color: palegoldenrod;
 }
 
-.article-left-panel .c {
+.left-panel .c {
     background-color: palegreen;
 }
 
-.article-left-panel .d {
+.left-panel .d {
     background-color: paleturquoise;
 }

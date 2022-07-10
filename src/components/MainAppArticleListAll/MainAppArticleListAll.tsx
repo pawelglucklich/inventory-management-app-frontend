@@ -4,9 +4,9 @@ import {LeftPanel} from "../LeftPanel/LeftPanel";
 import {useGlobalState} from "../utils/state";
 import {RightPanel} from "../RightPanel/RightPanel";
 
-import './MainAppLocationListAll.css';
+import './MainAppArticleListAll.css';
 
-export const MainAppLocationListAll = () => {
+export const MainAppArticleListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
     const [items, setItems] = useState<ItemEntity[]>([]);
 
@@ -15,7 +15,7 @@ export const MainAppLocationListAll = () => {
             if (val.length < 5) {
                 return '';
             } else {
-                const res = await fetch(`http://localhost:3001/item/search/location/${val}`);
+                const res = await fetch(`http://localhost:3001/item/search/article/${val}`);
                 const data = await res.json();
                 setItems(data.items);
             }
@@ -25,7 +25,7 @@ export const MainAppLocationListAll = () => {
     let n = 0;
 
     return (
-        <div className={'location-list-all'}>
+        <div className={'article-list-all'}>
             <LeftPanel/>
             <div className={'screen'}>
                 <table>
@@ -37,7 +37,7 @@ export const MainAppLocationListAll = () => {
                     {
                         items.map(item => (
                                 <tr key={item.id} tabIndex={n += 1}>
-                                    <td>{item.name}</td>
+                                    <td>{item.location}</td>
                                     <td>{item.description}</td>
                                     <td>{item.quantity}</td>
                                 </tr>

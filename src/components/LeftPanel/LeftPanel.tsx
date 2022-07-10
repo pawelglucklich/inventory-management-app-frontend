@@ -1,11 +1,11 @@
 import React from "react";
-import {actionEnum, Btn, clickEnum} from "../../common/Btn";
+import {actionEnum, Btn, clickEnum} from "../common/Btn";
 
-import './ArticleLeftPanel.css';
+import './LeftPanel.css';
 
-export const ArticleLeftPanel = () => {
+export const LeftPanel = () => {
     return (
-        <div className={'article-left-panel'}>
+        <div className={'left-panel'}>
             <Btn click={clickEnum.k_a} text={'a'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_b} text={'b'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_c} text={'c'} action={actionEnum.doNothing}/>
