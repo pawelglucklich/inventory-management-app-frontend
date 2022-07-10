@@ -5,7 +5,7 @@ import {useGlobalState} from "../utils/state";
 import {LocationLeftPanel} from "../MainAppLocation/Location-LeftPanel/LocationLeftPanel";
 import {LocationRightPanel} from "../MainAppLocation/Location-RightPanel/LocationRightPanel";
 
-import './LocationListAll.css';
+import './MainAppLocationListAll.css';
 
 export const MainAppLocationListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
