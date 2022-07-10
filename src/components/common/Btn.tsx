@@ -14,7 +14,8 @@ interface Props {
 export enum actionEnum {
     doNothing = '',
     locationListAll = '1',
-    articleListAll = '2'
+    articleListAll = '2',
+    itemUpdateLocation = '3'
 }
 
 export enum clickEnum {

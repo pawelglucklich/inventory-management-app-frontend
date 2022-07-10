@@ -15,6 +15,8 @@ export const RightPanel = () => {
             return '/location/listAll';
         } else if (action === actionEnum.articleListAll && val.length > 4) {
             return '/article/listAll';
+        } else if (action === actionEnum.itemUpdateLocation && val.length > 4){
+            return '/item';
         }
         return actionEnum.doNothing;
     };

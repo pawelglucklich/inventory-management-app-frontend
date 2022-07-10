@@ -1,0 +1,5 @@
+.main-app-item {
+    display: flex;
+    height: 80vh;
+    background-color: whitesmoke;
+}
