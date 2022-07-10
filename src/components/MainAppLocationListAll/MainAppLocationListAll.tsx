@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 import {ItemEntity} from 'types';
 
-import {useGlobalState} from "../../utils/state";
-import {LocationLeftPanel} from "../Location-LeftPanel/LocationLeftPanel";
-import {LocationRightPanel} from "../Location-RightPanel/LocationRightPanel";
+import {useGlobalState} from "../utils/state";
+import {LocationLeftPanel} from "../MainAppLocation/Location-LeftPanel/LocationLeftPanel";
+import {LocationRightPanel} from "../MainAppLocation/Location-RightPanel/LocationRightPanel";
 
 import './LocationListAll.css';
 
-export const LocationListAll = () => {
+export const MainAppLocationListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
     const [items, setItems] = useState<ItemEntity[]>([]);
 
@@ -23,6 +23,8 @@ export const LocationListAll = () => {
         })();
     }, []);
 
+    let n = 0;
+
     return (
         <div className={'location-list-all'}>
             <LocationLeftPanel/>
@@ -35,11 +37,11 @@ export const LocationListAll = () => {
                     </tr>
                     {
                         items.map(item => (
-                            <tr key={item.id}>
-                                <td>{item.name}</td>
-                                <td>{item.description}</td>
-                                <td>{item.quantity}</td>
-                            </tr>
+                                <tr key={item.id} tabIndex={n += 1}>
+                                    <td>{item.name}</td>
+                                    <td>{item.description}</td>
+                                    <td>{item.quantity}</td>
+                                </tr>
                         ))
                     }
                 </table>

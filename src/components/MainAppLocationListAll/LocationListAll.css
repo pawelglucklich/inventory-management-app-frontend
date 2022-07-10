@@ -1,0 +1,53 @@
+.location-list-all {
+    display: flex;
+    height: 80vh;
+    background-color: whitesmoke;
+}
+
+.location-list-all .screen {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ddd;
+    text-align: left;
+    font-size: 3vh;
+}
+
+table tr:first-child {
+    background-color: darkgrey;
+    border-color: lightgrey dimgray dimgray lightgrey;
+    border-style: solid;
+    border-width: 0.8vh;
+    text-decoration: none;
+}
+
+table th:first-child {
+    width: 30%;
+}
+
+table th:last-child {
+    width: 20%;
+}
+
+table tr:focus {
+    background-color: coral;
+}
+
+tr:nth-child(even) {background-color: #eee;}
+
+th {
+    padding: 3vh 1vh;
+    font-size: 4vh;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+td {
+    padding: 2vh 1vh;
+    cursor: default;
+}

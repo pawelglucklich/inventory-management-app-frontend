@@ -4,7 +4,7 @@ import {Footer} from './components/layout/Footer';
 import {MainAppLocation} from "./components/MainAppLocation/MainAppLocation";
 import {MainAppArticle} from "./components/MainAppArticle/MainAppArticle";
 import {Header} from "./components/layout/Header";
-import {LocationListAll} from "./components/MainAppLocation/Location-ListAll/LocationListAll";
+import {MainAppLocationListAll} from "./components/MainAppLocationListAll/MainAppLocationListAll";
 
 export const App = () => {
 
@@ -14,7 +14,7 @@ export const App = () => {
             <Routes>
                 <Route path={'/article'} element={<MainAppArticle/>}/>
                 <Route path={'/'} element={<MainAppLocation/>}/>
-                <Route path={'/location/listAll'} element={<LocationListAll/>}/>
+                <Route path={'/location/listAll'} element={<MainAppLocationListAll/>}/>
             </Routes>
             <Footer/>
         </>
