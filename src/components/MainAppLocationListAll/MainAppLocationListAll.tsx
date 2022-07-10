@@ -5,7 +5,6 @@ import {useGlobalState} from "../utils/state";
 import {RightPanel} from "../RightPanel/RightPanel";
 
 import './MainAppLocationListAll.css';
-import {Link} from "react-router-dom";
 
 export const MainAppLocationListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
