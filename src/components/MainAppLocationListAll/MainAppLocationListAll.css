@@ -51,3 +51,13 @@ td {
     padding: 2vh 1vh;
     cursor: default;
 }
+
+.item-link {
+    width: 80%;
+    font-size: 3vh;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

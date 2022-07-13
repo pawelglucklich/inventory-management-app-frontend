@@ -40,7 +40,7 @@ export const MainAppLocationListAll = () => {
                     {
                         items.map(item => (
                             <tr key={item.id} tabIndex={n += 1} id={item.id} onFocus={() => {setItemID(item.id)}}>
-                                <td><Link to={'/item'} onClick={() => {setVal('')}}>{item.name}</Link></td>
+                                <td><button className={'item-link'}><Link to={'/item'} onClick={() => {setVal('')}}>{item.name}</Link></button></td>
                                 <td>{item.description}</td>
                                 <td>{item.quantity}</td>
                             </tr>

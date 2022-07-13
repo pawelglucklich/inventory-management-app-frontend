@@ -5,7 +5,6 @@ import {useGlobalState} from "../../utils/state";
 
 export const ItemMainScreen = () => {
     const [val, setVal] = useGlobalState('screenValue');
-    const [loading, setLoading] = useState(false);
     const [itemID, setItemID] = useGlobalState('itemID')
 
     const valScreen = (val[4] ? `${val[0]} ${val[1]} . ${val[2]} ${val[3]} . ${val[4]}`
@@ -16,12 +15,9 @@ export const ItemMainScreen = () => {
                             : `_ _ . _ _ . _`
     );
 
-    const saveAd = async (event: SyntheticEvent) => {
+    const updateLocation = async (event: SyntheticEvent) => {
         event.preventDefault();
 
-        setLoading(true);
-
-        try {
             const res = await fetch(`http://localhost:3001/item/${itemID}/${val}`, {
                 method: 'PATCH',
                 headers: {
@@ -31,20 +27,14 @@ export const ItemMainScreen = () => {
                     "location": val,
                 }),
             });
-            const data = await res.json();
-            setItemID(data.id);
-
-        } finally {
-            setLoading(false);
-        }
     };
 
     return (
         <div className={'item-main-screen'}>
             <div className={'screen'}>
                 <p>{valScreen}</p>
-                <form action={''} onSubmit={saveAd}>
-                    <button>SUBMIT</button>
+                <form action={''} onSubmit={updateLocation}>
+                    <button className={'submit btn'}>update location</button>
                 </form>
             </div>
         </div>

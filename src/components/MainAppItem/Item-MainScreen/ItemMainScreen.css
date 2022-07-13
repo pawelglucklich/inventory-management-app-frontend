@@ -20,3 +20,11 @@
     font-size: 12vh;
     text-align: center;
 }
+
+.submit {
+    padding: 1vh 3vh;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
