@@ -3,12 +3,14 @@ import {ItemEntity} from 'types';
 import {LeftPanel} from "../LeftPanel/LeftPanel";
 import {useGlobalState} from "../utils/state";
 import {RightPanel} from "../RightPanel/RightPanel";
+import {Link} from "react-router-dom";
 
 import './MainAppArticleListAll.css';
 
 export const MainAppArticleListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
     const [items, setItems] = useState<ItemEntity[]>([]);
+    const [itemID, setItemID] = useGlobalState('itemID');
 
     useEffect(() => {
         (async () => {
@@ -29,16 +31,22 @@ export const MainAppArticleListAll = () => {
             <LeftPanel/>
             <div className={'screen'}>
                 <table>
-                    <tbody>
+                    <thead>
                     <tr>
-                        <th>Location</th>
-                        <th>Description</th>
-                        <th>Quantity</th>
+                        <th>Name</th>
+                        <th>Loc.</th>
+                        <th>Desc.</th>
+                        <th>Quan.</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     {
                         items.map(item => (
-                            <tr key={item.id} tabIndex={n += 1}>
-                                <td>{(item.location).toUpperCase()}</td>
+                            <tr key={item.id} tabIndex={n += 1} id={item.id} onFocus={() => {setItemID(item.id)}}>
+                                <td>{item.name}</td>
+                                <td>
+                                    <button className={'item-link'}><Link to={'/item'} onClick={() => {setVal('')}}>{item.location.toUpperCase()}</Link></button>
+                                </td>
                                 <td>{item.description}</td>
                                 <td>{item.quantity}</td>
                             </tr>

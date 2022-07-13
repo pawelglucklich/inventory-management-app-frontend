@@ -9,55 +9,58 @@
     flex-grow: 1;
     display: flex;
     flex-flow: column;
+    overflow-y: auto;
 }
 
-table {
+.location-list-all table {
     border-collapse: collapse;
     background-color: #ddd;
     text-align: left;
     font-size: 3vh;
+    position: relative;
 }
 
-table tr:first-child {
+.location-list-all table thead {
     background-color: darkgrey;
-    border-color: lightgrey dimgray dimgray lightgrey;
-    border-style: solid;
-    border-width: 0.8vh;
     text-decoration: none;
+    position: sticky;
+    top: 0;
 }
 
-table th:first-child {
+.location-list-all table th:first-child {
     width: 30%;
 }
 
-table th:last-child {
+.location-list-all table th:last-child {
     width: 20%;
 }
 
-table tr:focus {
+.location-list-all table tr:focus {
     background-color: coral;
 }
 
-tr:nth-child(even) {background-color: #eee;}
+.location-list-all tr:nth-child(even) {
+    background-color: #eee;
+}
 
-th {
+.location-list-all th {
     padding: 3vh 1vh;
     font-size: 4vh;
     text-transform: uppercase;
     cursor: default;
 }
 
-td {
+.location-list-all td {
     padding: 2vh 1vh;
     cursor: default;
 }
 
-.item-link {
+.location-list-all .item-link {
     width: 80%;
     font-size: 3vh;
 }
 
-a{
+.location-list-all a {
     color: black;
     text-decoration: none;
 }

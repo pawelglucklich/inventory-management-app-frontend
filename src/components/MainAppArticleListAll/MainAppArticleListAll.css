@@ -9,45 +9,58 @@
     flex-grow: 1;
     display: flex;
     flex-flow: column;
+    overflow-y: auto;
 }
 
-table {
+.article-list-all table {
     border-collapse: collapse;
     background-color: #ddd;
     text-align: left;
     font-size: 3vh;
+    position: relative;
 }
 
-table tr:first-child {
+.article-list-all table thead {
     background-color: darkgrey;
-    border-color: lightgrey dimgray dimgray lightgrey;
-    border-style: solid;
-    border-width: 0.8vh;
     text-decoration: none;
+    position: sticky;
+    top: 0;
 }
 
-table th:first-child {
+.article-list-all table th:first-child {
     width: 30%;
 }
 
-table th:last-child {
+.article-list-all table th:last-child {
     width: 20%;
 }
 
-table tr:focus {
+.article-list-all table tr:focus {
     background-color: coral;
 }
 
-tr:nth-child(even) {background-color: #eee;}
+.article-list-all tr:nth-child(even) {
+    background-color: #eee;
+}
 
-th {
+.article-list-all th {
     padding: 3vh 1vh;
     font-size: 4vh;
     text-transform: uppercase;
     cursor: default;
 }
 
-td {
+.article-list-all td {
     padding: 2vh 1vh;
     cursor: default;
+}
+
+.article-list-all .item-link {
+    width: 80%;
+    font-size: 3vh;
+}
+
+.article-list-all a {
+    color: black;
+    text-decoration: none;
 }
