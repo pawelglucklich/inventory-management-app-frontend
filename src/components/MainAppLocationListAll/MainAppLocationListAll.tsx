@@ -5,10 +5,12 @@ import {useGlobalState} from "../utils/state";
 import {RightPanel} from "../RightPanel/RightPanel";
 
 import './MainAppLocationListAll.css';
+import {Link} from "react-router-dom";
 
 export const MainAppLocationListAll = () => {
     const [val, setVal] = useGlobalState('screenValue')
     const [items, setItems] = useState<ItemEntity[]>([]);
+    const [itemID, setItemID] = useGlobalState('itemID');
 
     useEffect(() => {
         (async () => {
@@ -37,8 +39,8 @@ export const MainAppLocationListAll = () => {
                     </tr>
                     {
                         items.map(item => (
-                            <tr key={item.id} tabIndex={n += 1}>
-                                <td>{item.name}</td>
+                            <tr key={item.id} tabIndex={n += 1} id={item.id} onFocus={() => {setItemID(item.id)}}>
+                                <td><Link to={'/item'} onClick={() => {setVal('')}}>{item.name}</Link></td>
                                 <td>{item.description}</td>
                                 <td>{item.quantity}</td>
                             </tr>
@@ -47,7 +49,6 @@ export const MainAppLocationListAll = () => {
                     </tbody>
                 </table>
             </div>
-
             <RightPanel/>
         </div>
     );

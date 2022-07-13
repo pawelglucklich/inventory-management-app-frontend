@@ -7,16 +7,14 @@ import './RightPanel.css';
 
 
 export const RightPanel = () => {
-    const [action, setAction] = useGlobalState("okAction");
-    const [val, setVal] = useGlobalState("screenValue");
+    const [action, setAction] = useGlobalState('okAction');
+    const [val, setVal] = useGlobalState('screenValue');
 
     const handleOk = () => {
         if (action === actionEnum.locationListAll && val.length > 4) {
             return '/location/listAll';
         } else if (action === actionEnum.articleListAll && val.length > 4) {
             return '/article/listAll';
-        } else if (action === actionEnum.itemUpdateLocation && val.length > 4){
-            return '/item';
         }
         return actionEnum.doNothing;
     };
