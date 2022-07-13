@@ -32,8 +32,11 @@ export const ItemMainScreen = () => {
     return (
         <div className={'item-main-screen'}>
             <div className={'screen'}>
-                <p>{valScreen}</p>
-                <form action={''} onSubmit={updateLocation}>
+                <div className={'screen-name'}>
+                    <span>row</span><span>lot</span><span>level</span>
+                </div>
+                <p className={'screen-val'}>{valScreen}</p>
+                <form className={'item-form'} action={''} onSubmit={updateLocation}>
                     <button className={'submit btn'}>update location</button>
                 </form>
             </div>

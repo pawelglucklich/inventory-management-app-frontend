@@ -12,16 +12,31 @@
     border-color: lightgrey dimgray dimgray lightgrey;
     border-style: solid;
     border-width: 0.8vh;
-    line-height: 20vh;
-
+    line-height: 15vh;
 }
 
-.item-main-screen .screen p {
+
+.item-main-screen .screen-name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vh;
+    line-height: 3vh;
+    text-transform: uppercase;
+    padding: 2vh 10vh 0;
+}
+
+.item-main-screen .screen-val {
     font-size: 12vh;
     text-align: center;
 }
 
+.item-form {
+    display: flex;
+    justify-content: right;
+}
+
 .submit {
+    margin-top: 5vh;
     padding: 1vh 3vh;
     font-size: 3vh;
     text-transform: uppercase;
