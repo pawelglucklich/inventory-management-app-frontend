@@ -5,7 +5,9 @@ import './ItemMainScreen.css';
 
 export const ItemMainScreen = () => {
     const [val, setVal] = useGlobalState('screenValue');
-    const [itemID, setItemID] = useGlobalState('itemID')
+    const [itemID, setItemID] = useGlobalState('itemID');
+    const [loading, setLoading] = useState(false);
+    const [ok, setOk] = useState('');
 
     const valScreen = (val[4] ? `${val[0]} ${val[1]} . ${val[2]} ${val[3]} . ${val[4]}`
             : val[3] ? `${val[0]} ${val[1]} . ${val[2]} ${val[3]} . _`
@@ -18,6 +20,10 @@ export const ItemMainScreen = () => {
     const updateLocation = async (event: SyntheticEvent) => {
         event.preventDefault();
 
+        setLoading(true);
+
+        try {
+
             const res = await fetch(`http://localhost:3001/item/${itemID}/${val}`, {
                 method: 'PATCH',
                 headers: {
@@ -27,7 +33,29 @@ export const ItemMainScreen = () => {
                     "location": val,
                 }),
             });
+            const data = res.status.toString();
+            setOk(data);
+
+        } finally {
+            setLoading(false);
+        }
     };
+
+    if (loading) {
+        return (
+            <div className={'item-main-screen'}>
+                <h2>Updating location...</h2>
+            </div>
+        )
+    }
+
+    if (ok === '200') {
+        return (
+            <div className={'item-main-screen'}>
+                <h2>Location has been updated to {val[0]}{val[1]}.{val[2]}{val[3]}.{val[4]}.</h2>
+            </div>
+        )
+    }
 
     return (
         <div className={'item-main-screen'}>
