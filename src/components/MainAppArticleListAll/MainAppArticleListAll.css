@@ -35,6 +35,10 @@
     width: 20%;
 }
 
+.article-list-all tr td  {
+    min-width: 10vh;
+}
+
 .article-list-all table tr:focus {
     background-color: coral;
 }
