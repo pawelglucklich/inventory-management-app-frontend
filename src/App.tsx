@@ -7,6 +7,7 @@ import {MainAppLocation} from "./components/MainAppLocation/MainAppLocation";
 import {MainAppLocationListAll} from "./components/MainAppLocationListAll/MainAppLocationListAll";
 import {MainAppArticleListAll} from "./components/MainAppArticleListAll/MainAppArticleListAll";
 import {MainAppItem} from "./components/MainAppItem/MainAppItem";
+import {AddItem} from "./components/AddItem/AddItem";
 
 export const App = () => {
 
@@ -19,6 +20,7 @@ export const App = () => {
                 <Route path={'/location/listAll'} element={<MainAppLocationListAll/>}/>
                 <Route path={'/article/listAll'} element={<MainAppArticleListAll/>}/>
                 <Route path={'/item'} element={<MainAppItem/>}/>
+                <Route path={'/addItem'} element={<AddItem/>}/>
             </Routes>
             <Footer/>
         </>

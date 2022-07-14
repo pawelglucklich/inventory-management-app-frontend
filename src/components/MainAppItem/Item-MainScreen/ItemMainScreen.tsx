@@ -1,7 +1,7 @@
 import React, {SyntheticEvent, useState} from "react";
+import {useGlobalState} from "../../utils/state";
 
 import './ItemMainScreen.css';
-import {useGlobalState} from "../../utils/state";
 
 export const ItemMainScreen = () => {
     const [val, setVal] = useGlobalState('screenValue');

@@ -1,0 +1,13 @@
+.add-item-main-screen {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+}
+
+.submit {
+    margin-top: 5vh;
+    padding: 1vh 3vh;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
