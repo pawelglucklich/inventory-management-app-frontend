@@ -32,10 +32,10 @@ export const RightPanel = () => {
             <Btn click={clickEnum.k_1} text={'1'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_2} text={'2'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_3} text={'3'} action={actionEnum.doNothing}/>
-            <Btn text={'▲'} action={actionEnum.doNothing}/>
+            <Btn text={'▲ hidden'} action={actionEnum.doNothing}/>
             <Btn click={clickEnum.k_0} text={'0'} action={actionEnum.doNothing}/>
-            <Btn click={clickEnum.k_comma} text={','} action={actionEnum.doNothing}/>
-            <Btn text={'▼'} action={actionEnum.doNothing}/>
+            <Btn click={clickEnum.k_comma} text={', hidden'} action={actionEnum.doNothing}/>
+            <Btn text={'▼ hidden'} action={actionEnum.doNothing}/>
             <Link to={handleOk()}>
                 <button className={'ok btn'}>ok</button>
             </Link>
