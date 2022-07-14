@@ -44,11 +44,19 @@ export const AddItemMainScreen = () => {
     };
 
     if (loading) {
-        return <h2>Adding new Item...</h2>;
+        return (
+            <div className={'add-item-main-screen'}>
+                <h2>Adding new Item...</h2>
+            </div>
+        )
     }
 
     if (id) {
-        return <h2>New Item "{form.name}" have been added to warehouse.</h2>;
+        return (
+            <div className={'add-item-main-screen'}>
+                <h2>New Item "{form.name}" have been added to warehouse.</h2>
+            </div>
+        )
     }
 
     return (

@@ -30,12 +30,12 @@
     text-align: center;
 }
 
-.item-form {
+.item-main-screen .item-form {
     display: flex;
     justify-content: right;
 }
 
-.submit {
+.item-main-screen .submit {
     margin-top: 5vh;
     padding: 1vh 3vh;
     font-size: 3vh;
