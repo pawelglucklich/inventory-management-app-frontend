@@ -17,6 +17,9 @@ export const LocationMainScreen = () => {
     return (
         <div className={'location-main-screen'}>
             <div className={'screen'}>
+                <div className={'screen-name'}>
+                    <span>row</span><span>lot</span><span>level</span>
+                </div>
                 <p>{valScreen}</p>
             </div>
         </div>

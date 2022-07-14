@@ -64,3 +64,9 @@
     color: black;
     text-decoration: none;
 }
+
+.location-list-all button {
+    overflow: hidden;
+}
+
+
