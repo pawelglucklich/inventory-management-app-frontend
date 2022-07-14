@@ -104,6 +104,7 @@ export const AddItemMainScreen = () => {
                             name="quantity"
                             required
                             min={1}
+                            step={'1'}
                             max={999999}
                             maxLength={6}
                             value={form.quantity}
