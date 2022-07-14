@@ -17,6 +17,9 @@ export const ArticleMainScreen = () => {
     return (
         <div className={'article-main-screen'}>
             <div className={'screen'}>
+                <div className={'screen-name'}>
+                    <span>article</span>
+                </div>
                 <p>{valScreen}</p>
             </div>
         </div>

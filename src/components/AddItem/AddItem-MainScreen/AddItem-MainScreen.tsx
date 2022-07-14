@@ -63,7 +63,7 @@ export const AddItemMainScreen = () => {
         <div className={'add-item-main-screen'}>
 
             <form action="" className="add-form" onSubmit={saveAd}>
-                <h1>Add Item</h1>
+                <h1>Add new Item</h1>
                 <p>
                     <label>
                         Article: <br/>

@@ -12,8 +12,16 @@
     border-color: lightgrey dimgray dimgray lightgrey;
     border-style: solid;
     border-width: 0.8vh;
-    line-height: 20vh;
+    line-height: 15vh;
+}
 
+.article-main-screen .screen-name{
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    line-height: 3vh;
+    text-transform: uppercase;
+    padding: 2vh 0 0;
 }
 
 .article-main-screen .screen p {
