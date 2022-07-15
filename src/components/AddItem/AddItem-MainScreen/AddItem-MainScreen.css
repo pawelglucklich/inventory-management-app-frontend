@@ -1,0 +1,27 @@
+.add-item-main-screen {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-item-main-screen .add-form p{
+    margin: 1vh 0;
+    font-size: 3vh;
+}
+
+.add-item-main-screen .add-form input {
+    width: 18vh;
+    font-size: 2vh;
+    padding: .5vh 1vh;
+    border-radius: 3px;
+}
+
+.add-item-main-screen .submit {
+    margin-top: 5vh;
+    padding: 1vh 3vh;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}

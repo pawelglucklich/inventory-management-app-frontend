@@ -1,0 +1,74 @@
+.article-list-all {
+    display: flex;
+    height: 80vh;
+    background-color: whitesmoke;
+}
+
+.article-list-all .screen {
+    height: 80vh;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    overflow-y: auto;
+}
+
+.article-list-all table {
+    border-collapse: collapse;
+    background-color: #ddd;
+    text-align: left;
+    font-size: 3vh;
+    position: relative;
+}
+
+.article-list-all table thead {
+    background-color: darkgrey;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+}
+
+.article-list-all table th:first-child {
+    width: 30%;
+}
+
+.article-list-all table th:last-child {
+    width: 20%;
+}
+
+.article-list-all tr td  {
+    min-width: 10vh;
+}
+
+.article-list-all table tr:focus {
+    background-color: coral;
+}
+
+.article-list-all tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.article-list-all th {
+    padding: 3vh 1vh;
+    font-size: 4vh;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.article-list-all td {
+    padding: 2vh 1vh;
+    cursor: default;
+}
+
+.article-list-all .item-link {
+    width: 80%;
+    font-size: 3vh;
+}
+
+.article-list-all a {
+    color: black;
+    text-decoration: none;
+}
+
+.article-list-all button {
+    overflow: hidden;
+}

@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: royalblue;
+}
+
+footer .btn {
+    width: 35vh;
+    font-size: 3vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    width: 100vw;
+    line-height: 5vh;
+    margin-right: 2vh;
+    font-size: 2vh;
+}
+
+.footer-right p {
+text-align: right;
+}

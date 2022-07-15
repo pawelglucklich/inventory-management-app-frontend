@@ -1,0 +1,22 @@
+.right-panel {
+    display: flex;
+    flex-flow: wrap;
+    width: calc((80vh / 6) * 3);
+}
+
+.right-panel button {
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: calc(80vh / 6);
+    width: calc(80vh / 6);
+}
+
+.right-panel .b3,
+.right-panel .cancel {
+    width: calc(80vh / 4);
+}
+
+.right-panel .ok {
+    width: calc((80vh / 6)*2);
+}

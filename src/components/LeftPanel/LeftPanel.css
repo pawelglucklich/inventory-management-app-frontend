@@ -1,0 +1,28 @@
+.left-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-panel button {
+    height: calc(80vh / 6);
+    width: calc(80vh / 6);
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.left-panel .a {
+    background-color: palevioletred;
+}
+
+.left-panel .b {
+    background-color: palegoldenrod;
+}
+
+.left-panel .c {
+    background-color: palegreen;
+}
+
+.left-panel .d {
+    background-color: paleturquoise;
+}
